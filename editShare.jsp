@@ -13,7 +13,7 @@
 <h1 style="color:red">
 <u><i>fee updation</i></u>
 </h1>
-<form:form action="edit1" method="post" modelAttribute="companyRecord"> 
+<form:form action="edit1" method="post" modelAttribute="shareRecord"> 
 Enter Company Id:<form:input type="text" path="companyId" readonly="readonly"/>
 <br></br>
 Enter Company Name:<form:input type="text" path="companyName" readonly="readonly"/>
