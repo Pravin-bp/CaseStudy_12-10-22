@@ -57,7 +57,7 @@ public class ShareContoller {
 	public ModelAndView showCompanyEdit(@PathVariable long id)
 	{
 		CompanyShare company=service.findById(id);
-		ModelAndView mv=new ModelAndView("editPage");
+		ModelAndView mv=new ModelAndView("editShare");
 		mv.addObject("shareRecord",company);
 		return mv;
 	}
