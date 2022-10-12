@@ -58,12 +58,12 @@ public class ShareContoller {
 	{
 		CompanyShare company=service.findById(id);
 		ModelAndView mv=new ModelAndView("editPage");
-		mv.addObject("companyRecord",company);
+		mv.addObject("shareRecord",company);
 		return mv;
 	}
 	
 	@PostMapping("/edit/edit1")
-	public ModelAndView editCourse(@ModelAttribute("companyRecord") CompanyShare company)
+	public ModelAndView editCourse(@ModelAttribute("shareRecord") CompanyShare company)
 	{
 	service.save(company);
 	return new ModelAndView("redirect:/index");
